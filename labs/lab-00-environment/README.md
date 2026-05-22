@@ -49,6 +49,24 @@
 | worker-1 | 2 vCPU | 4 GB | 40 GB |
 | worker-2 | 2 vCPU | 4 GB | 40 GB |
 
+## Опционально: Proxmox helper repository
+
+Если участник использует Proxmox, можно подготовить VM вручную или воспользоваться helper repository:
+
+- GitHub: https://github.com/iurii-anfinogenov/opentofu-proxmox-k8s-lab
+- SourceCraft mirror: https://sourcecraft.dev/anfinogenov/opentofu-proxmox-k8s-lab
+
+Это не обязательный способ подготовки стенда.
+
+Важно:
+
+- OpenTofu используется только для создания VM.
+- Kubernetes заранее не устанавливаем.
+- kubeadm, containerd, CNI, Helm и Argo CD не ставим до соответствующих лабораторных.
+- Если repository не подходит под конкретный Proxmox-стенд, участник может создать VM вручную.
+
+Критерий готовности остается тем же: чистые VM, SSH-доступ, сеть между нодами, internet access и заполненный `environment.md`.
+
 ## Что нужно сделать
 
 1. Сделать fork репозитория.
