@@ -135,8 +135,6 @@ ls -la /var/lib/etcd || true
 
 ## kubeadm init dry-run
 
-Риск: **LOW**
-
 Команда показывает, что будет сделано, но не применяет изменения.
 
 Выполнить на control-plane node:
